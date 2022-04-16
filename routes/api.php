@@ -25,10 +25,13 @@ Route::middleware(['web'])->group(function () {
     //
 });
 Route::middleware('auth:sanctum') ->group(function () {
+    Route::post('conversation-store', [ConversationController::class, 'store']);
     Route::get('conversation-index', [ConversationController::class, 'index']);
-    Route::get('conversation-store', [ConversationController::class, 'store']);
-
-
+    Route::get('conversation-show/{id}', [ConversationController::class, 'show']);
+    Route::put('conversation-update/{id}', [ConversationController::class, 'update']);
+    Route::post('message-send', [ConversationController::class, 'sendMessage']);
+    Route::get('message-show/{id}', [ConversationController::class, 'showMessage']);
+    Route::get('message-index', [ConversationController::class, 'indexMessage']);
 });
 
 Route::post('/tokens/create', function (Request $request) {

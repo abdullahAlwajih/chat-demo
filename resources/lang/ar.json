@@ -1,3 +1,7 @@
 {
-    "login" : "تم تسجيل دخولك بنجاح"
+    "login" : "تم تسجيل دخولك بنجاح",
+    "Data fetched successfully": "تم جلب البيانات بنجاح",
+    "Conversation created successfully": "تم إنشاء المحادثة بنجاح",
+    "Data has been updated successfully": "تم تحديث البيانات بنجاح",
+    "Messages have been sent successfully": "تم إرسال الرسائل بنجاح"
 }
